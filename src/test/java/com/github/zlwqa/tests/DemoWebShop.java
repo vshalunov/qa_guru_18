@@ -31,7 +31,7 @@ public class DemoWebShop extends TestBase {
                 open(""));
 
 
-        step("Количество товара '14.1-inch Laptop' = " + updateTopCartSection, () ->
+        step("Количество товара = " + updateTopCartSection, () ->
                 $(".cart-qty").shouldHave(text(updateTopCartSection)));
 
 
