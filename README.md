@@ -1,5 +1,5 @@
 # qa_guru_18
 
-##Сайт магазина http://demowebshop.tricentis.com/
+## Сайт магазина http://demowebshop.tricentis.com/
 
 Исследовать сайт магазина, автоматизировать проверку ui-взаимодействия по api (разработать любой автотест)
