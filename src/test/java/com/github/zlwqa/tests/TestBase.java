@@ -39,10 +39,10 @@ public class TestBase {
                             .extract()
                             .cookie("NOPCOMMERCE.AUTH");
 
-            step("Open minimal content, because cookie can be set when site is opened", () ->
+            step("Открывать минимальный контент, потому что cookie можно установить при открытии сайта", () ->
                     open("/Themes/DefaultClean/Content/images/logo.png"));
 
-            step("Set cookie to to browser", () ->
+            step("Установите cookie в браузер", () ->
                     getWebDriver().manage().addCookie(
                             new Cookie("NOPCOMMERCE.AUTH", authorizationCookie)));
         });
