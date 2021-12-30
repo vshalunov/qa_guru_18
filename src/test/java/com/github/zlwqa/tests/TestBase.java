@@ -26,7 +26,7 @@ public class TestBase {
         Configuration.baseUrl = webConfig.webUrl();
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-        step("Получение cookie через api и установка его в браузере", () -> {
+        step("Получить cookie через api и установить его в браузере", () -> {
             authorizationCookie =
                     given()
                             .contentType("application/x-www-form-urlencoded; charset=UTF-8")
@@ -39,10 +39,10 @@ public class TestBase {
                             .extract()
                             .cookie("NOPCOMMERCE.AUTH");
 
-            step("Открывать минимальный контент, потому что cookie можно установить при открытии сайта", () ->
+            step("Открыть минимальный контент, потому что cookie можно установить при открытии сайта", () ->
                     open("/Themes/DefaultClean/Content/images/logo.png"));
 
-            step("Установите cookie в браузер", () ->
+            step("Установить cookie в браузер", () ->
                     getWebDriver().manage().addCookie(
                             new Cookie("NOPCOMMERCE.AUTH", authorizationCookie)));
         });
