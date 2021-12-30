@@ -12,7 +12,6 @@ import static io.restassured.RestAssured.given;
 
 public class DemoWebShop extends TestBase {
 
-
     @Test
     @DisplayName("Отображение товара в корзине после добавления товара через API")
     void displayItemInShoppingCartAfterAddItemViaAPITest() {
