@@ -29,11 +29,7 @@ public class DemoWebShop extends TestBase {
         step("Открыть главную страницу", () ->
                 open(""));
 
-
         step("Количество товара = " + updateTopCartSection, () ->
                 $(".cart-qty").shouldHave(text(updateTopCartSection)));
-
-
     }
-
 }
